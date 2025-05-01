@@ -2025,7 +2025,12 @@ public class AjanRestController {
 	}
 	
 	
+	@RequestMapping(value = "/getLogss", method = RequestMethod.GET)
+	public String getwellplannedleave11(HttpServletRequest request, Model model, HttpServletResponse response) throws IOException {
 	
+	
+	  return "santosh";
+	}
 	
 
 
