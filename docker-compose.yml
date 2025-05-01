@@ -7,7 +7,7 @@ services:
         networks:
             - java_connect
         ports:
-            - 5001:5001
+            - 9090:9090
         restart: always          
 networks:
     java_connect:
