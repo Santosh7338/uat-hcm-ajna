@@ -177,6 +177,13 @@
     <artifactId>joda-time</artifactId>
     <version>2.10.10</version> <!-- or latest stable version -->
 </dependency>
+
+        <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.30</version> <!-- use latest -->
+    <scope>provided</scope>
+</dependency>
         
     </dependencies>
 
