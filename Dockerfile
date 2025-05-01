@@ -11,4 +11,6 @@ COPY target/ajan-hcm-0.0.1-SNAPSHOT.jar /app/ajan-hcm-0.0.1-SNAPSHOT.jar
 # EXPOSE 8080
 
 # Command to run your application when the container starts
-CMD ["java", "-jar", "ajan-hcm-0.0.1-SNAPSHOT.jar"]
+#CMD ["java", "-jar", "ajan-hcm-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "--add-opens", "jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED", "-jar", "ajan-hcm-0.0.1-SNAPSHOT.jar"]
+
