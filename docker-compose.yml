@@ -1,7 +1,7 @@
 version: '3.0'
 services:
     Java:
-        build: /var/lib/jenkins/workspace/uat-hcm-ajna
+        build: /var/lib/jenkins/workspace/ABC
         container_name: uathcmajna
         image: uat_hcm_ajna
         networks:
