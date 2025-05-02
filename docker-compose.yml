@@ -10,9 +10,9 @@ services:
             - 9090:9090
         restart: always 
         environment:
-           - DB_USERNAME=$DB_CREDENTIALS_USR
-           - DB_PASSWORD=$DB_CREDENTIALS_PSW
-           - DB_URL=$DB_URL
+           - DB_USERNAME={DB_USERNAME}
+           - DB_PASSWORD=${DB_PASSWORD}
+           - DB_URL=${DB_URL}
 networks:
     java_connect:
         external: true
