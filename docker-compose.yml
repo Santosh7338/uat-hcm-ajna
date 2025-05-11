@@ -2,12 +2,12 @@ version: '3.0'
 services:
     Java:
         build: /var/lib/jenkins/workspace/uat_hcm_ajna_uat
-        container_name: uathcmajna
-        image: uat_hcm_ajna
+        container_name: uathcmajna_uat
+        image: uat_hcm_ajna_uat
         networks:
             - java_connect
         ports:
-            - 9090:9090
+            - 5001:5001
         restart: always 
         environment:
            - DB_USERNAME=${DB_USERNAME}
